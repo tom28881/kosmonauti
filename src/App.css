@@ -1,10 +1,18 @@
 
+* {
+
+ visibility: initial;
+}
+
 .input {
-  width: 60%;
+  width: 60;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  
+  text-align: center;
+  align: center ;
+
+
 
 }
 
@@ -16,7 +24,7 @@
 	border:1px solid #18ab29;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color: black;
 	font-family:Arial;
 	font-size:17px;
 	padding:16px 31px;
@@ -24,9 +32,8 @@
   text-shadow:0px 1px 0px #2f6627;
   align: center ;
   top:10px;
-  
+  text-align: center;
 
-  
 }
 
 .form {
@@ -34,4 +41,31 @@
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 80px;
+  text-align: center;
+  
 }
+ .header {
+  text-align: center;
+  color: #18ab29
+
+ }
+
+ .delete {
+  
+  background-color: red;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid red;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	font-family:Arial;
+	font-size:10px;
+	padding:15px 30px;
+  text-decoration:none;
+  padding-top: 17px;
+
+
+
+ }
