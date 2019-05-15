@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import InputGroup from 'react-bootstrap/InputGroup'
 
 class App extends React.Component {
   constructor(props) {
@@ -27,8 +26,8 @@ class App extends React.Component {
           <input className = 'input'  placeholder="Přijmení"  name="lastName" value={el.lastName ||''} onChange={this.handleChange.bind(this, i)} />
           <input className = 'input' placeholder="Narození" name="birthday" value={el.birthday ||''} onChange={this.handleChange.bind(this, i)} />
           <input className = 'input' placeholder="Superschopnosti" name="superpower" value={el.superpower ||''} onChange={this.handleChange.bind(this, i)} />
-          <input className = 'input' type='button' value='Odstranění' onClick={this.removeClick.bind(this, i)}/>  
-       </div>          
+          <input className = 'delete' type='button' value='Odstranění' onClick={this.removeClick.bind(this, i)}/>  
+      </div>          
      )
     )
   }
@@ -53,7 +52,7 @@ class App extends React.Component {
   render() {
     return (
       <div className = 'form'>
-      <h1>Basic elektronická evidence kosmonautů</h1>
+      <h1 className = 'header'>Basic elektronická evidence kosmonautů</h1>
           {this.cosmoCreate()}        
           <input className = 'button' type='button' value='Nový kosmonaut' onClick={this.addClick.bind(this)}/>
       </div>
